@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
@@ -12,69 +11,56 @@
 		
         <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css" type='text/css'/>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic" type='text/css'/>
+	  
+	  	<link rel="stylesheet" href="style.css" />
+	  <link rel="stylesheet" href="../bower_components/fullpage.js/jquery.fullPage.css"/>
+	  
   </head>
-  <body>
-    <div class="card" style="z-index:999; margin:0; padding:15px">
-    	<a class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>Contact</a>
-    	<a class="waves-effect waves-light btn"><i class="material-icons left">face</i>Who we are?</a>
-    	<a class="waves-effect waves-light btn"><i class="material-icons left">favorite</i>Like</a>
-    </div>
-    <div style="height:100%"> 
-	    <div class="slider fullscreen">
-	    <ul class="slides">
-	      <li>
-	        <img src="http://www.peoplepeople.se/wp-content/uploads/2016/02/people-people-company-photo-studio-1800x756.jpg"> <!-- random image -->
-	        <div class="caption center-align">
-	        	<div class="card">
-	        		<h3>This is our big Tagline!</h3>
-	          		<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-	        	</div>
-	        </div>
-	      </li>
-	      <li>
-	        <img src="https://assets.rockefellerfoundation.org/app/uploads/20160707100501/human-behavior-crowd.jpeg"> <!-- random image -->
-	        <div class="caption left-align">
-	        	<div class="card">
-	        		<h3>Left Aligned Caption</h3>
-	          		<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>	
-	        	</div>
-	        </div>
-	      </li>
-	      <li>
-	        <img src="http://weknowyourdreams.com/images/children/children-06.jpg"> <!-- random image -->
-	        <div class="caption right-align">
-	        	<div class="card">
-	        		<h3>Right Aligned Caption</h3>
-	          		<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>	
-	        	</div>
-	        </div>
-	      </li>
-	      <li>
-	        <img src="https://static.pexels.com/photos/47224/pexels-photo-47224.jpeg"> <!-- random image -->
-	        <div class="caption center-align">
-	        	<div class="card">
-	        		<h3>This is our big Tagline!</h3>
-	          		<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>	
-	        	</div>
-	        </div>
-	      </li>
-	    </ul>
-	  </div>
-  </div>
+	
+  <body ng-app="app" ng-cloak>
+	  <!--
+    <md-card layout="row" layout-wrap style="width:100%; position: fixed;z-index:999; margin:0; padding:15px">
+		<md-button  class="md-icon-button" aria-label="Favorite">
+            <md-icon class="material-icons gray-text">favorite</md-icon>
+        </md-button>
+		
+		<md-button  class="md-icon-button" aria-label="Us">
+            <md-icon class="material-icons gray-text">face</md-icon>
+        </md-button>
+    </md-card>
+	  -->
+	  <div flex="100" my-page></div>
+	  
+	  
+    
   
-  <!-- Jquery & Materialize -->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-aria.min.js"></script>
+  	<!-- Jquery & Materialize -->
+  	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  	<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  
+   	<!-- Compiled and minified JavaScript -->
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
         
-   <!-- Angular Material Library -->
-   <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
+   <!-- Angular Material requires Angular.js Libraries -->
+  	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+  	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
+  	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script>
+  	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-messages.min.js"></script>
+
+  <!-- Angular Material Library -->
+  	<script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
+	  
+	  <script type="text/javascript" src="../bower_components/fullpage.js/jquery.fullPage.js"></script>
+  
+  	<script src="app.js"></script>
+	  
+	  <script type="text/javascript">		  
+			
+		  
+	  </script>
+	  
+	  
    
-   <script type="text/javascript">
-  	$(document).ready(function(){
-        $('.slider').slider({full_width: true});
-    });
-  </script>
   </body>
 </html>
+
