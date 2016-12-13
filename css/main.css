@@ -1,4 +1,5 @@
-body{
+body {
+  font-size: 'Roboto';
   min-height: 100%;
   height: 100%;
   overflow-y: auto;
@@ -16,30 +17,7 @@ header {
   overflow: hidden;
   width: 100%;
 }
-.sub-header {
-  background-color: #000002;
-  padding: 0 20px 0 20px;
-  position: fixed;
-  z-index: 999;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-.third-header {
-  margin: 16px 0 0 0;
-}
-
-main {
-  margin: 5rem 0 0 0;
-  transition: background 1s ease-in-out;
-}
-
-.parallax-container {
-  height: 100vh;
-}
-.parallax img {
-  bottom: 50%;
-}
+main {margin: 0;}
 
 .seccion {
   margin: 0;
@@ -51,6 +29,7 @@ main {
 }
 
 .inner-section {
+  height: 100vh;
   text-align: center;
   margin: 0;
 }
@@ -65,14 +44,56 @@ main {
   justify-content: center;
 }
 
+.amazing-title {
+  font-size: 8rem;
+}
+.amazing-subtitle {
+  font-size: 4rem;
+}
+.carousel, .carousel-slider {
+  height: 100vh !important;
+}
+
+.carousel-item .row .col {
+  height: inherit;
+}
+
+.carousel-item .row #col-usa {
+  height: 100vh;
+  background-image: url(../img/usa.jpg);
+  background-size: cover;
+  background-position: 50%;
+}
+
+.carousel-item .row #col-cr {
+  height: 100vh;
+  background-image: url(../img/costarica.jpg);
+  background-size: cover;
+  background-position: 50%;
+}
+
+.carousel-item .row #col-col {
+  height: 100vh;
+  background-image: url(../img/colombia.jpg);
+  background-size: cover;
+  background-position: 50%;
+}
+
+.carousel-item .row #col-bra {
+  height: 100vh;
+  background-image: url(../img/brazil.jpg);
+  background-size: cover;
+  background-position: 50%;
+}
+
 #seccion0 {
-  background-image: url(../img/section0.jpg);
+  background-image: url(../img/weare.jpg);
   background-size: cover;
 }
 
 #seccion1 {
   position: relative;
-  background-image: url(../img/parallax.jpg);
+  background-image: url(../img/bible1.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
@@ -83,9 +104,9 @@ main {
 
 #seccion2 .inner-section .col-img {
   height: 100vh;
-  background-image: url(../img/seccion0.jpg);
+  background-image: url(../img/world.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: left;
 }
 
 #seccion2 .inner-section .vertical-center {
@@ -94,7 +115,7 @@ main {
 
 #seccion3 {
   position: relative;
-  background-image: url(../img/section3.jpg);
+  background-image: url(../img/section3-2.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
@@ -103,14 +124,14 @@ main {
   margin: 0;
 }
 
-.amazing-title {
-  font-size: 10rem;
-}
-.amazing-subtitle {
-  font-size: 8rem;
+
+@media only screen and (min-width: 760px) {
+  .carousel-item .row .col {
+    height: inherit;
+  }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 759px) {
   h3 {
     font-size: 2rem;
   }
@@ -121,6 +142,11 @@ main {
     font-size: 4rem;
   }
 
+  .carousel-item .row .col {
+    height: auto;
+    padding: 16px 0 0 0;
+  }
+
   #seccion2 {
     height: auto;
   }
@@ -129,9 +155,27 @@ main {
     height: auto;
   }
 
-  #seccion0, #seccion1, #seccion3{
+  #seccion0 {
+    background-size: cover;
+    background-position: 70%;
+    width: 100%;
+  }
+
+  #seccion1 {
     background-size: cover;
     background-position: center;
+    width: 100%;
+  }
+
+  #seccion2 .inner-section .col-img {
+    background-image: url(../img/world.jpg);
+    background-size: cover;
+    background-position: 10%;
+  }
+
+  #seccion3 {
+    background-size: cover;
+    background-position: right;
     width: 100%;
   }
 }

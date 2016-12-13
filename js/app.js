@@ -12,7 +12,7 @@ angular
 
   function HeaderController(){
     var vm = this;
-    
+
     vm.menuOptions = {
       about: {
         text: 'About',
@@ -47,10 +47,10 @@ angular
 
     function link(scope, element, attrs) {
       element.on('click', function() {
-        var $anchor = $(this);        
+        var $anchor = $(this);
         $('body').animate({
           scrollTop: $('main').scrollTop() + $($anchor.attr('href')).position().top - $('header').height()
-        }, 1000, 'easeInOutExpo'); 
+        }, 1000, 'easeInOutExpo');
 
         event.preventDefault();
       });
