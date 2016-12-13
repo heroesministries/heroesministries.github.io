@@ -147,6 +147,20 @@ main {margin: 0;}
     padding: 16px 0 0 0;
   }
 
+  #seccion0 {
+    background-image: url(../img/mobile/weare.jpg);
+    background-size: cover;
+    background-position: 70%;
+    width: 100%;
+  }
+
+  #seccion1 {
+    background-image: url(../img/mobile/bible1.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+  }
+
   #seccion2 {
     height: auto;
   }
@@ -155,27 +169,43 @@ main {margin: 0;}
     height: auto;
   }
 
-  #seccion0 {
-    background-size: cover;
-    background-position: 70%;
-    width: 100%;
-  }
-
-  #seccion1 {
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-  }
-
   #seccion2 .inner-section .col-img {
-    background-image: url(../img/world.jpg);
+    background-image: url(../img/mobile/world.jpg);
     background-size: cover;
     background-position: 10%;
   }
 
   #seccion3 {
+    background-image: url(../img/mobile/section3-2.jpg);
     background-size: cover;
     background-position: right;
     width: 100%;
+  }
+
+  .carousel-item .row #col-usa {
+    background-image: url(../img/mobile/usa.jpg);
+    background-size: cover;
+    background-position: 50%;
+  }
+
+  .carousel-item .row #col-cr {
+    height: 100vh;
+    background-image: url(../img/mobile/costarica.jpg);
+    background-size: cover;
+    background-position: 50%;
+  }
+
+  .carousel-item .row #col-col {
+    height: 100vh;
+    background-image: url(../img/mobile/colombia.jpg);
+    background-size: cover;
+    background-position: 50%;
+  }
+
+  .carousel-item .row #col-bra {
+    height: 100vh;
+    background-image: url(../img/mobile/brazil.jpg);
+    background-size: cover;
+    background-position: 50%;
   }
 }
