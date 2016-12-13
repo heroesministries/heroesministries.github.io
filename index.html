@@ -1,66 +1,74 @@
 <!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <!-- Compiled and minified CSS -->
-    
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" type='text/css'/>
-        <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Open+Sans' type='text/css'/>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" type='text/css'/>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css" type='text/css' media="screen,projection" />
-        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.min.css" type="text/css" />
-		
-        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css" type='text/css'/>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic" type='text/css'/>
-	  
-	  	<link rel="stylesheet" href="style.css" />
-	  <link rel="stylesheet" href="bower_components/fullpage.js/jquery.fullPage.css"/>
-	  
-  </head>
-	
-  <body ng-app="app" ng-cloak>
-	  <!--
-    <md-card layout="row" layout-wrap style="width:100%; position: fixed;z-index:999; margin:0; padding:15px">
-		<md-button  class="md-icon-button" aria-label="Favorite">
-            <md-icon class="material-icons gray-text">favorite</md-icon>
-        </md-button>
-		
-		<md-button  class="md-icon-button" aria-label="Us">
-            <md-icon class="material-icons gray-text">face</md-icon>
-        </md-button>
-    </md-card>
-	  -->
-	  <div flex="100" my-page></div>
-	  
-	  
-    
-  
-  	<!-- Jquery & Materialize -->
-  	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  	<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-  
-   	<!-- Compiled and minified JavaScript -->
-  	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
-        
-   <!-- Angular Material requires Angular.js Libraries -->
-  	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
-  	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
-  	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script>
-  	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-messages.min.js"></script>
+<html ng-app="app">
 
-  <!-- Angular Material Library -->
-  	<script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
-	  
-	  <script type="text/javascript" src="bower_components/fullpage.js/jquery.fullPage.js"></script>
-  
-  	<script src="app.js"></script>
-	  
-	  <script type="text/javascript">		  
-			
-		  
-	  </script>
-	  
-	  
-   
-  </body>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Heroes </title>
+
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+  <!--
+  <header ng-controller="HeaderController as vm" ng-cloak>
+    <div class="sub-header row">
+      <div class="third-header row">
+        <a class="col s4 center" ng-repeat="item in vm.menuOptions" style="cursor:pointer">
+          <page-scroll href="{{item.href}}" class="pink-text"> {{ item.text}} </page-scroll>
+        </a>
+      </div>
+    </div>
+  </header>
+-->
+
+  <main>
+    <div id="seccion0" class="seccion">
+      <div class="amazing-subtitle center white-text"> We are... </div>
+    </div>
+    <div id="seccion1" class="seccion vertical-center">
+      <div class="inner-section center">
+        <div class="amazing-subtitle white black-text">
+          Heroes by the Grace
+        </div>
+      </div>
+    </div>
+    <div id="seccion2" class="seccion black">
+      <div class="inner-section row white-text">
+        <div class="col s12 m6 l6 vertical-center">
+          <i class="material-icons large">favorite</i>
+          <h3> <small>YOUNG PEOPLE</small> COMMITED TO THE GREAT COMISSION </h3>
+        </div>
+        <div class="col-img col s12 m6 l6">
+        </div>
+      </div>
+    </div>
+    <div id="seccion3" class="seccion vertical-center">
+      <div class="row white-text" style="width:100%">
+        <div class="col s12 m6 l6 center">
+          <h4> Willing to serve God always </h4>
+        </div>
+        <div class="col s12 m6 l6 center">
+          <h4> Living a life</h4>
+        </div>
+      </div>
+    </div>
+    <div id="seccion4" class="seccion white"></div>
+
+  </main>
+
+  <script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>
+  <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0-rc.2/angular.min.js"></script>
+
+  <script src="js/main.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+
 </html>
-
